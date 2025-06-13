@@ -1,4 +1,3 @@
-import { MongooseModule } from '@nestjs/mongoose';
 import { SequelizeModule } from '@nestjs/sequelize';
 
 const defaultOptions = {
