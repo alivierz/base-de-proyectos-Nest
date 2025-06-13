@@ -5,6 +5,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { UserModule } from './modules/user/user.module';
 import { MongoDbModule } from './utils/mongo-db';
 import { Enviroment } from './utils/enviroments';
+// import { PgDbModule } from './utils/postgre-db';
 
 @Module({
   imports: [
@@ -12,6 +13,7 @@ import { Enviroment } from './utils/enviroments';
     UserModule,
     Enviroment(process.env.MODE),
     MongoDbModule,
+    // PgDbModule,
   ],
   controllers: [AppController],
   providers: [AppService],
